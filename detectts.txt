@@ -9,7 +9,7 @@ import { HttpClientService } from '../service/http-client.service';
   styleUrls: ['./detect.component.scss']
 })
 export class DetectComponent implements OnInit {
-  sendreq:any=[]
+
   leafApicesValue:string=""
   leafBaceisValue:string=""
   leafMarginValue:string=""
@@ -67,11 +67,9 @@ export class DetectComponent implements OnInit {
        });  
        this.jsonString=JSON.stringify(this.jsonObject);
        console.log(this.jsonString)
-       this.sendreq.push(this.jsonString)
-       console.log(this.sendreq)
        
     
-       this.httpClient.getfilename(this.jsonObject).subscribe(
+       this.httpClient.getfilename(this.jsonString).subscribe(
          res=>{
            //console.log(res)
            this.datalist=res;
@@ -83,3 +81,4 @@ export class DetectComponent implements OnInit {
    }
     
   }
+
