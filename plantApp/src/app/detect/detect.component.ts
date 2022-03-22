@@ -1,6 +1,7 @@
 import { HttpHeaders } from '@angular/common/http';
 import { Component, OnInit } from '@angular/core';
 //import { DetectService } from '../service/detect.service';
+import {Router} from '@angular/router';
 import { HttpClientService } from '../service/http-client.service';
 
 @Component({
@@ -18,13 +19,16 @@ export class DetectComponent implements OnInit {
   jsonString:string=""
   datalist:any
   key:any
-  constructor(private httpClient:HttpClientService) { 
+  constructor(private httpClient:HttpClientService,private router: Router) { 
     
   }
 
   ngOnInit(): void {
   }
-
+    
+  goToPage(this:any, pageName:string){
+    this.router.navigate([`${pageName}`]);
+  }
    display(name:string,value:any) {
      console.log(name)
      if(name=='leaf_apicies')
