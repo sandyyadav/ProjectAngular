@@ -18,6 +18,7 @@ export class DetectComponent implements OnInit {
   jsonObject:any= {};
   jsonString:string=""
   datalist:any
+  
   key:any
   constructor(private httpClient:HttpClientService,private router: Router) { 
     

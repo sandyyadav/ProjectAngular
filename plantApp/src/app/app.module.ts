@@ -11,13 +11,14 @@ import { HttpInterceptorService } from './service/http-interceptor.service';
 import { FormsModule } from '@angular/forms';
 import { HttpClientModule, HTTP_INTERCEPTORS } from '@angular/common/http';
 import { LearningModuleComponent } from './learning-module/learning-module.component';
-
+import { AddleafComponent } from './addleaf/addleaf.component';
 @NgModule({
   declarations: [
     AppComponent,
     IndexComponent,
     DetectComponent,
     LearningModuleComponent,
+    AddleafComponent,
     //HttpClientComponent
   ],
   imports: [
