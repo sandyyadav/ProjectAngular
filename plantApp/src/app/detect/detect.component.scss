@@ -1,9 +1,9 @@
-.body
+.detect-body
 {
-    font-family: "montserrat";
-    background: #06beb6;  /* fallback for old browsers */
-    background: -webkit-linear-gradient(to right, #48b1bf, #06beb6);  /* Chrome 10-25, Safari 5.1-6 */
-    background: linear-gradient(to right, #48b1bf, #06beb6); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */    
+  background-color: #63d471;
+  background-image: linear-gradient(315deg, #63d471 0%, #233329 74%);
+  
+     
 }
 p
 {
@@ -42,14 +42,18 @@ input[type=radio]:checked + label>img {
 /*container*/
 .container-fluid{
     padding: 3% 5%;
+    width: 50%;
+    margin: 0;
 }
 /*result*/
 .result
 {
-  background-color: #00C198;
+  background-color:#44be63 ;
   padding: 5px;
-  height:140vh;
-  overflow:scroll;
+  margin: 50px 0;
+  border-radius: 5px;
+  
+  width: 40%;
 }
 
 .setimg{
@@ -66,4 +70,15 @@ input[type=radio]:checked + label>img {
 .download-button
 {
     margin: 5% 3% 5% 0%;
+}
+
+.row{
+  display: flex;
+  width: 100wh;
+  justify-content: left;
+
+}
+.btn-green:hover{
+  background-color: #44be63;
+  color: white;
 }
