@@ -8,7 +8,8 @@ body
      color: white;
      height: 90vh;
      -webkit-clip-path: polygon(0 0, 100% 0, 100% 87%, 0% 100%);
-clip-path: polygon(0 0, 100% 0, 100% 87%, 0% 100%);
+clip-path: polygon(0 0, 100% 0, 100% 90%, 0% 100%);
+padding: 10px;
 
 }
 h1{
@@ -16,7 +17,7 @@ h1{
     font-family: 'Roboto', sans-serif;
     /* font-style: italic; */
     font-weight: 800;
-   font-size: 3rem;
+   font-size: 2rem;
     line-height: 1.5;
 }
 h2
@@ -40,7 +41,7 @@ p
 }
 /* navbar */
 .navbar{
-    padding: 0 0 4.5rem;
+    padding: 0 0 30px;
 }
 .navbar-brand{
     font-size: 2.5rem;

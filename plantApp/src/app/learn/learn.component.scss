@@ -1,0 +1,32 @@
+table {
+    margin-top: 2rem;
+    margin: 0 auto;
+    border-collapse: collapse;
+    border-style:dashed;
+    caption-side: top;
+    height: 2000px;
+    width: 1200px;
+    /*Remove all the outside
+    borders of the existing table*/
+}
+table td {
+    font-weight: bold;
+    padding: 0.5rem;
+    border: 5px solid orange;
+}
+table th {
+    padding: 0.5rem;
+    border: 5px solid ForestGreen;
+}
+div
+{
+    margin-top: 30px;
+    background: rgb(28,193,145);
+    background: linear-gradient(90deg, rgba(28,193,145,1) 0%, rgba(9,121,100,0.5373336834733893) 63%, rgba(21,74,84,0.8370535714285714) 100%);
+}
+caption
+{
+    font-weight: bolder;
+    font-size: large;
+    text-align: center;
+}

@@ -12,6 +12,7 @@ import { FormsModule } from '@angular/forms';
 import { HttpClientModule, HTTP_INTERCEPTORS } from '@angular/common/http';
 import { LearningModuleComponent } from './learning-module/learning-module.component';
 import { AddleafComponent } from './addleaf/addleaf.component';
+import { LearnComponent } from './learn/learn.component';
 @NgModule({
   declarations: [
     AppComponent,
@@ -19,6 +20,7 @@ import { AddleafComponent } from './addleaf/addleaf.component';
     DetectComponent,
     LearningModuleComponent,
     AddleafComponent,
+    LearnComponent,
     //HttpClientComponent
   ],
   imports: [

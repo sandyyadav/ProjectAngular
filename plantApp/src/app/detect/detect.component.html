@@ -36,7 +36,7 @@
           <img src="assets/images/leaf part image/leaf_apices/acute.jpg" alt="I'm happy" />
         </label>
         <div>
-          <button type="button" class="btn btn-light btn-lg download-button btn-green" (click)="goToPage('LearningModule');">
+          <button type="button" class="btn btn-light btn-lg download-button btn-green" (click)="goToPage('learn');">
             <i class="fab fa-envira"></i> learn about leaf apicies
           </button>
         </div>
@@ -92,7 +92,7 @@
           <img src="assets/images/leaf part image/leaf_bases/oblique.jpg" alt="I'm happy" />
         </label>
         <div>
-          <button type="button" class="btn btn-light btn-lg download-button btn-green" (click)="goToPage('LearningModule');">
+          <button type="button" class="btn btn-light btn-lg download-button btn-green" (click)="goToPage('learn');">
             <i class="fab fa-envira"></i> learn about leaf bases
           </button>
         </div>
@@ -153,7 +153,7 @@
           <img src="assets/images/leaf part image/leaf_margin/dentate.jpg" alt="I'm happy" />
         </label>
         <div>
-          <button type="button" class="btn btn-light btn-lg download-button btn-green" (click)="goToPage('LearningModule');">
+          <button type="button" class="btn btn-light btn-lg download-button btn-green" (click)="goToPage('learn');">
             <i class="fab fa-envira"></i> learn about leaf margin
           </button>
         </div>
@@ -167,8 +167,9 @@
         <div id="imgresult">
           <div class="row">
             {{x}}
-            <div class="card" class="col-auto" style="width: 18rem;" *ngFor="let pl of datalist[x]">
-              <img src="assets/{{pl}}" class="card-img-top setimg" alt="...">
+            <br>
+            <div class="card" class="col-auto" style="width: 15rem;" *ngFor="let pl of datalist[x]">
+              <img src="{{pl}}" class="card-img-top setimg" alt="...">
               <div class="card-body">
               </div>
             </div>
